@@ -76,7 +76,7 @@
 	height: 50px;
 }
 
-.fileContainer .uploadPicturesWrapper {
+.fileContainer #uploadPicturesWrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

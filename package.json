@@ -1,35 +1,36 @@
 {
   "name": "react-images-upload-demo",
-  "version": "0.2.1",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakehartnell/react-images-upload"
-  },
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-flip-move": "^3.0.1",
-    "react-scripts": "1.1.4",
-    "react-syntax-highlighter": "^7.0.4"
+    "url": "https://github.com/JakeHartnell/react-images-upload"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "NODE_ENV=development parcel public/index.html --open",
+    "build": "parcel build ./src/index.js --out-dir ./build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.3.2",
+    "react-images-upload": "^1.2.7",
+    "react-syntax-highlighter": "^9.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^3.1.4"
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0"
   }
 }
